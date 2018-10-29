@@ -1,0 +1,46 @@
+# Django
+django==2.0.9 # pyup: < 2.1  # https://www.djangoproject.com/
+
+# Configuration
+dj-database-url
+python-decouple
+whitenoise==4.1
+
+# Django 3rd party modules
+django-allauth
+django-extensions
+django-model-utils
+django-rest-auth
+django-webpack-loader
+djangorestframework
+djangorestframework-jwt
+
+# the django tutorial's packages - once i get the app runnings, i'll set the versions for all
+# Python-PostgreSQL Database Adapter
+psycopg2
+
+# Time zones support
+pytz
+
+#     # Django
+# django==1.10.4
+#
+# # Configuration
+# dj-database-url==0.4.1
+# python-decouple==3.0
+# whitenoise==3.2.2
+#
+# # Django 3rd party modules
+# django-allauth==0.30.0
+# django-extensions==1.7.5
+# django-model-utils==2.6
+# django-rest-auth==0.9.0
+# django-webpack-loader==0.4.1
+# djangorestframework==3.5.3
+# djangorestframework-jwt==1.9.0
+#
+# # Python-PostgreSQL Database Adapter
+# psycopg2==2.6.2
+#
+# # Time zones support
+# pytz==2016.10
