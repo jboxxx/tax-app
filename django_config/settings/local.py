@@ -7,10 +7,22 @@ from .base import *
 # ------------------------------------------------------------------------------
 # https://github.com/owais/django-webpack-loader
 
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'assets'),
+)
+print(BASE_DIR)
+print(STATICFILES_DIRS)
 WEBPACK_LOADER = {
     'DEFAULT': {
-        'BUNDLE_DIR_NAME': 'builds-dev/',
-        'STATS_FILE': os.path.join(BASE_DIR, 'webpack', 'webpack-stats.dev.json')
+        'CACHE': not DEBUG,
+        'BUNDLE_DIR_NAME': 'builds-development/',
+        'STATS_FILE': os.path.join(
+            BASE_DIR, 'webpack', 'webpack-stats.dev.json'),
+        'POLL_INTERVAL': 0.1,
+        'TIMEOUT': None,
+        'IGNORE': ['.+\.hot-update.js', '.+\.map'],
     }
 }
 

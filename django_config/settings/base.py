@@ -20,8 +20,10 @@ from decouple import config
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-APPS_DIR = os.path.join(BASE_DIR, 'django_apps')
+print(BASE_DIR)
 
+APPS_DIR = os.path.join(BASE_DIR, 'django_apps')
+print(APPS_DIR)
 
 # SECRET KEY
 # ------------------------------------------------------------------------------
@@ -73,6 +75,8 @@ THIRD_PARTY_APPS = [
     'rest_auth',
     'rest_auth.registration',
     'webpack_loader',
+    'django_config',
+    'django_apps',
 ]
 
 LOCAL_APPS = []

@@ -5,12 +5,12 @@ var config = require('./webpack.base.config.js');
 
 config.entry = {
   main: [
-    path.join(__dirname, '../static/js/src/main/index')
+    path.join(__dirname, '../assets/js/src/main/index')
   ]
 };
 
 config.output = {
-  path: path.join(__dirname, '../static/builds/'),
+  path: path.join(__dirname, '../assets/builds/'),
   filename: '[name]-[hash].min.js',
   publicPath: '/static/js/builds/'
 };

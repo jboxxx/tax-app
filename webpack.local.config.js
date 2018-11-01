@@ -8,15 +8,15 @@ config.entry = {
     'webpack-dev-server/client?http://0.0.0.0:3000',
     'webpack/hot/only-dev-server',
     'react-hot-loader/patch',
-    path.join(__dirname, './static/js/src/main/index')
+    path.join(__dirname, './assets/js/src/main/index')
   ]
 };
 
 config.devtool = 'inline-sourcemap';
 config.output = {
-  path: path.join(__dirname, './static/builds-development/'),
+  path: path.join(__dirname, './assets/builds-development/'),
   filename: '[name]-[hash].js',
-  publicPath: 'http://0.0.0.0:3000/static/builds/',
+  publicPath: 'http://0.0.0.0:3000/assets/builds/',
 };
 
 config.plugins = [
