@@ -4,13 +4,9 @@
   "description": "crypto tax app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode development --config webpack.local.config.js",
-    "prod": "webpack --mode production --config webpack.production.config.js",
-    "serve": "webpack --mode development --config webpack.local.config.js --watch",
-    "build-development": "webpack --config webpack/webpack.local.config.js --progress --colors",
+    "build-development": "webpack --config webpack/webpack.local.config.js --progress --colors --mode development",
     "build-production": "webpack --config webpack/webpack.production.config.js --progress --colors",
-    "watch": "webpack-dev-server --config webpack.local.config.js",
+    "watch": "webpack-dev-server --config webpack/webpack.local.config.js --mode development",
     "test": "./node_modules/karma/bin/karma start webpack/karma.config.js --log-level debug"
   },
   "author": "",
